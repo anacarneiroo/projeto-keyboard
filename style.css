@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color:rgb(134, 146, 157);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    width: 1000px;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+td {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid #737373;
+    margin: 3px;
+    height: 50px;
+}
+
+td:hover{
+    box-shadow: inset 0px 0px 2px #000000;
+    cursor: default;
+}
+
+#linha01 > td {
+    padding: 3px;
+    height: 30px;
+    width: 45px;
+}
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dois-ele{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.maiores{
+    width: 50px;
+    height: 50px;
+}
+
+.menores{
+    width: 45px;
+    margin: 2px;
+}
+
+#backspace{
+    width: 90px;
+}
+
+.centro-esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+#tab{
+    width: 80px;
+}
+
+#enter{
+    width: 65px;
+}
+
+#fixa{
+    width: 120px;
+}
+
+#shift1,#ctrl1{
+    width: 70px;
+}
+
+#shift2{
+    width: 130px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#space{
+    width: 300px;
+    height: 50px;
+}
+
+#pg-up,#pg-down{
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    width: 50px;
+    height: 28px;
+}
+
+#pg-up{
+    border-bottom: 2px solid #000000;
+    border-radius: 3px;
+}
+
+#pg-down{
+    border-top: 2px solid #000000;
+    border-radius: 3px;
+}
+
+#home,#end{
+    height: 25px;
+    align-self: self-end;
+}
+
+#cor{
+    background-color: #dddddd95;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#cor > #input1,#input2{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
