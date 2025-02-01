@@ -3,7 +3,7 @@ var inputCorTecla = document.getElementById('input2')
 var body = document.getElementById('body')
 
 function clicar(a,cor) {
-    a.style.backgroundColor = cor
+    a.style.background = cor
 }
 
 inputCorFundo.addEventListener('input', function(){

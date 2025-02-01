@@ -5,7 +5,12 @@
 
 body{
     height: 100vh;
-    background-color:rgb(134, 146, 157);
+    background: linear-gradient(90deg,rgb(127, 127, 127),rgb(59, 59, 59));
+    animation-name: animar;
+    background-size: 300%;
+    animation-duration: 10s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 0.8em;
 }
@@ -28,17 +33,18 @@ tr{
 }
 
 td {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px #ffffff;
+    background-color: rgba(255, 255, 255, 0.378);
+    box-shadow: 0px 0px 2px #ffffff;
+    color: white;
     padding: 5px;
     border-radius: 8px;
-    border: 1px solid #737373;
+    border: 1px solid #ffffff;
     margin: 3px;
     height: 50px;
 }
 
 td:hover{
-    box-shadow: inset 0px 0px 2px #000000;
+    box-shadow: inset 0px 0px 10px #ffffff;
     cursor: default;
 }
 
@@ -110,19 +116,18 @@ td:hover{
 }
 
 #pg-up,#pg-down{
-    color: rgb(0, 0, 0);
     padding: 3px;
     width: 50px;
     height: 28px;
 }
 
 #pg-up{
-    border-bottom: 2px solid #000000;
+    border-bottom: 2px solid #00000090;
     border-radius: 3px;
 }
 
 #pg-down{
-    border-top: 2px solid #000000;
+    border-top: 2px solid #00000090;
     border-radius: 3px;
 }
 
@@ -144,5 +149,11 @@ td:hover{
     height: 40px;
 }
 
-
-
+@keyframes animar {
+    from {
+        background-position: 0 0;
+    }
+    from{
+        background-position: 100%,0;
+    }
+}
